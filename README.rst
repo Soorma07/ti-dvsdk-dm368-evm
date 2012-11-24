@@ -16,6 +16,11 @@ Near-term actions
 .. _`Code Sourcery`: http://tw.myblog.yahoo.com/stevegigijoe/article?mid=366
 .. _`documented on this wiki`: http://www.nas-central.org/wiki/Setting_up_the_codesourcery_toolchain_for_X86_to_ARM9_cross_compiling
 
+* Did the DVDs.
+* Downloaded the toolchain, have not yet built the DVSDK.
+* Got the board up and running with existing SD card. I can telnet into the board over Ethernet as root.
+* Once I built the DVSDK, I can try building a C program and see if I can run it. I want to set that all up in a VM.
+
 Studying the DM368 EVM code from TI
 ===================================
 
@@ -150,7 +155,7 @@ Here are two files of interest, with interesting definitions in them:
 * dmai_2_20_00_15/packages/ti/sdo/dmai/Buffer.h
 
   - typedef struct Buffer_Attrs { ... };
-  - typedef struct _Buffer_Object *Buffer_Handle;
+  - typedef struct _Buffer_Object \*Buffer_Handle;
 
 * dmai_2_20_00_15/packages/ti/sdo/dmai/priv/_Buffer.h
 
